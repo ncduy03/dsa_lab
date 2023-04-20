@@ -20,7 +20,7 @@ int main(){
             i++;
         }
     }
-    
+
     while(1){
         scanf("%s", req);
         if(strcmp(req,"#")==0){
