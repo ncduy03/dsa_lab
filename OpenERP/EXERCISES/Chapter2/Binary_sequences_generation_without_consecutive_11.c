@@ -18,6 +18,7 @@ void solution(){
 void Try(int k){
     for(int v = 0; v <= 1; v++){
         if(check(v, k)){
+            printf("v = %d, x[k] = %d \n", v, x[k]);
             x[k] = v;
             if(k == n) solution();
             else Try(k + 1);

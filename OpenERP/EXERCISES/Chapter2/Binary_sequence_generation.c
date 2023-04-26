@@ -3,11 +3,7 @@
 int n;
 int x[N];
 
-int check(int v, int k){
-    return 1;
-}
-
-void solution(){
+void output(){
     for(int i = 1; i <= n; i++){
         printf("%d", x[i]);
     }
@@ -16,11 +12,9 @@ void solution(){
 
 void Try(int k){
     for(int v = 0; v <= 1; v++){
-        if(check(v, k)){
-            x[k] = v;
-            if(k == n) solution();
-            else Try(k + 1);
-        }
+        x[k] = v;
+        if(k == n) output();
+        else Try(k + 1);
     }
 }
 
