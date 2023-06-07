@@ -58,4 +58,5 @@ int main(){
     char str[100]; scanf("%s", str);
     if(check(str)) printf("YES");
     else printf("NO");
+    return 0;
 }
