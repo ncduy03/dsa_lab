@@ -54,9 +54,16 @@ int check(char* s){
     return stackEmpty();
 }
 
-int main(){
-    char str[100]; scanf("%s", str);
-    if(check(str)) printf("YES");
-    else printf("NO");
+// int main(){
+//     char str[100]; scanf("%s", str);
+//     printf("%d", check(str));
+//     return 0;
+// }
+
+int main() {
+    char str[101]; // Tăng kích thước mảng lên 101 để chứa chuỗi nhập vào dài tối đa 100 ký tự
+    fgets(str, sizeof(str), stdin); // Sử dụng fgets để đọc chuỗi nhập vào
+    str[strcspn(str, "\n")] = '\0'; // Loại bỏ ký tự xuống dòng '\n' khỏi chuỗi
+    printf("%d", check(str));
     return 0;
 }

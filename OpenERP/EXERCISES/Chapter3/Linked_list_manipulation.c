@@ -137,4 +137,5 @@ int main(){
             head = reverse(head);
         }
     }
+    return 0;
 }
