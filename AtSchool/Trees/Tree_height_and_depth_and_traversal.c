@@ -110,22 +110,22 @@ void run(){
 		scanf("%s",cmd);
 		//printf("read %s\n",cmd);
 		if(strcmp(cmd,"*")==0) break;
-		else if(strcmp(cmd,"MakeRoot")==0){
+		else if(strcmp(cmd, "MakeRoot")==0){
 			int v; scanf("%d",&v);
 			root = makeNode(v);
-		}else if(strcmp(cmd,"Insert")==0){
+		}else if(strcmp(cmd, "Insert")==0){
 			int u,v; scanf("%d %d",&u,&v);
 			insert(u,v);
-		}else if(strcmp(cmd,"PreOrder")==0){
+		}else if(strcmp(cmd, "PreOrder")==0){
 			preOrder(root); printf("\n");
-		}else if(strcmp(cmd,"InOrder")==0){
+		}else if(strcmp(cmd, "InOrder")==0){
 			inOrder(root); printf("\n");
-		}else if(strcmp(cmd,"PostOrder")==0){
+		}else if(strcmp(cmd, "PostOrder")==0){
 			postOrder(root); printf("\n");
-		}else if(strcmp(cmd,"Height")==0){
+		}else if(strcmp(cmd, "Height")==0){
 			int v; scanf("%d",&v);
 			printf("%d\n",height(v));
-		}else if(strcmp(cmd,"Depth")==0){
+		}else if(strcmp(cmd, "Depth")==0){
 			int v; scanf("%d",&v);
 			printf("%d\n",depth(v));
 		}
