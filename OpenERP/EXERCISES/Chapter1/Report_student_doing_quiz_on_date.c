@@ -7,9 +7,15 @@ typedef struct Information{
     char id[100];
 }inf;
 
-void sort_inf(){
+void sort_inf(inf a[]){
     for(int i = 0; i < 1000; i++){
-
+        for(int j = 0; j < 1000; j++){
+            if(strcpy(inf[i], inf[j] > 0)){
+                inf tmp = inf[i];
+                inf[i] = inf[j];
+                inf[j] = tmp;
+            }
+        }
     }
 }
 
@@ -24,8 +30,5 @@ int main(){
             i++;
         }
     }
-
-    for(int i = 0; i < 1000; i++){
-
-    }
+    
 }

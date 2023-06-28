@@ -191,15 +191,15 @@ void main(){
         printf("Enter a command: ");
         scanf("%s", cmd);
         if(strcmp(cmd, "Quit") == 0) break;
-        else if(strcmp(cmd, "Load")==0) processLoad();
-        else if(strcmp(cmd, "Print")==0) processPrint();
-        else if(strcmp(cmd, "Find")==0) processFind();
-        else if(strcmp(cmd, "Height")==0) processHeight();
-        else if(strcmp(cmd, "Count")==0) processCount();
-        else if(strcmp(cmd, "FindLeaves")==0) processFindLeaves();
-        else if(strcmp(cmd, "AddLeftChild")==0) processAddLeftChild();
-        else if(strcmp(cmd, "AddRightChild")==0) processAddRightChild();
-        else if(strcmp(cmd, "Store")==0) processStore();
+        else if(strcmp(cmd, "Load") == 0) processLoad();
+        else if(strcmp(cmd, "Print") == 0) processPrint();
+        else if(strcmp(cmd, "Find") == 0) processFind();
+        else if(strcmp(cmd, "Height") == 0) processHeight();
+        else if(strcmp(cmd, "Count") == 0) processCount();
+        else if(strcmp(cmd, "FindLeaves") == 0) processFindLeaves();
+        else if(strcmp(cmd, "AddLeftChild") == 0) processAddLeftChild();
+        else if(strcmp(cmd, "AddRightChild") == 0) processAddRightChild();
+        else if(strcmp(cmd, "Store") == 0) processStore();
     }
     freeTree(root);
 }

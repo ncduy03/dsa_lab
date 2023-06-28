@@ -7,6 +7,7 @@ typedef struct Transmitsion{
     char time[9];
     char atm[4];
 }trans;
+
 int main(){
     trans a[1000];
     int i = 0;
